@@ -31,10 +31,7 @@ const TodoList = () => {
         <input
           id="todo-input"
           value={tentativeTodo}
-          onChange={(event: any) => {
-            // console.log(event.target.value);
-            setTentativeTodo(event.target.value);
-          }}
+          onChange={(event: any) => setTentativeTodo(event.target.value)}
         />
       </form>
       <ol>
@@ -44,19 +41,6 @@ const TodoList = () => {
             <label htmlFor="todo-1">{label}</label>
           </li>
         ))}
-
-        {/* <li>
-          <input type="checkbox" id="todo-1" />
-          <label htmlFor="todo-1">Invite classmates</label>
-        </li>
-        <li>
-          <input type="checkbox" id="todo-2" />
-          <label htmlFor="todo-2">Hire clown</label>
-        </li>
-        <li>
-          <input type="checkbox" id="todo-3" />
-          <label htmlFor="todo-3">Order bouncy castle</label>
-        </li> */}
       </ol>
     </main>
   );
